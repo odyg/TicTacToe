@@ -97,7 +97,9 @@ namespace TicTacToe
                                 b[r, c] = "O";
                             }
 
-                            if(checkWin("X", b) == true)
+                            Display(b);
+
+                            if (checkWin("X", b) == true)
                             {
                                 Console.WriteLine($"Congrats {player1}");
                                 Console.WriteLine("Do you want to play again? (Y/N)");
